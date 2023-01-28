@@ -8,13 +8,56 @@
 </head>
 
 <body>
-<h2>Calculate Calories</h2>
+<h1>Calculate Calories</h1>
 
-<div>
-    
+<div id="RadioButtons">
 
+<ul>
+    <input type="radio" id= "Sit Ups Push Ups Jump Rope" name = "exercise"
+    value="Sit Ups" />
+    <label for="Sit ups">Sit Ups</label>
+</ul>
     
+<ul>
+    <input type="radio" id= "Push Ups" name = "exercise"
+    value="Push Ups" />
+    <label for="Push Ups">Push Ups</label>
+</ul>
+
+<ul>
+    <input type="radio" id= "Jump Rope" name = "exercise"
+    value="Jump Rope" />
+    <label for="Jump Rope">Jump Rope</label>
+</ul>
+
 </div>
+
+<h3> How many minutes</h3>
+   
+<div id="txt1">
+
+    <input type="text" id="txt1" />
+
+</div>
+
+  <br>
+
+  <button id="Add" onclick="onClickFunction()">Add</button>
+
+<br>
+<br>
+
+  <button id="Burned" onclick="onClickFunction()">Most burned</button>
+
+  <div id="txt2">
+
+    <input type="text" id="txt2" />
+
+  </div>
+
+<br>
+
+  <button id="Show All" onclick="onClickFunction()">Show All</button>
 
 
 <script src="main.js"></script>
