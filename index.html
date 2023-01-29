@@ -12,8 +12,9 @@
 
   <body>
     <h1>Calorie Burner</h1>
-
+    
     <div id="RadioButtons">
+      <h3>Select exercise:</h3>
       <input type="radio" id="situps" name="exercise" value="situps" />
       <label for="situps">Sit Ups</label>
 
@@ -22,31 +23,24 @@
 
       <input type="radio" id="jumprope" name="exercise" value="jumprope" />
       <label for="jumprope">Jump Rope</label>
-    </div>
-
-    <h3>How many minutes</h3>
+    </div></body>
 
     <div id="time">
-      <input type="text" id="minutes" />
-    </div>
+      <h3>Enter number of minutes</h3>
+      <input type="number" id="minutes" />
+      <button id="Add" onclick="add()">Add Workout</button>
+    </div><br /><br />
 
-    <br />
-
-    <button id="Add" onclick="add()">Add</button>
-
-    <br />
-    <br />
-
-    <button id="Burned" onclick="mostBurned()">Most burned</button>
+    <button id="Burned" onclick="mostBurned()">Highest Calories Burned</button>
 
     <div id="txt2">
-      <input type="text" id="highestCals" />
+      <input type="text" id="highestCals" readonly="true"/>
     </div>
     <br />
 
-    <button id="Show All" onclick="showAll()">Show All</button>
+    <button id="Show All" onclick="showAll()">Show All Workouts</button>
 
-    <div style="text-align: left;" id= "displayList">
+    <div style="text-align: center;" id= "displayList">
     </div>
 
     <script src="main.js"></script>

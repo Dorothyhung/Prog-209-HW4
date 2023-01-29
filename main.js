@@ -54,26 +54,26 @@ function clear() {
 function mostBurned() {
     var highestExercise = "situps";
     var highestCals = array[0].calsBurned;
+    var minutes = array[0].minutes;
     for (i = 0; i < array.length; i++) {
         if (array[i].calsBurned > highestCals) {
             highestCals = array[i].calsBurned;
             highestExercise = array[i].exercise;
         }
     }
-    document.getElementById("highestCals").value = highestExercise + " " +highestCals;
+    document.getElementById("highestCals").value = highestExercise + " for " + minutes + " minutes burned " + highestCals + " calories!";
 }
 
 //show all workouts
 
 function showAll()
 {
-   let v = document.getElementById("displayList");
-
-for (i = 0; i < array.length; i++) {
-    let list = document.createElement("li");
-    list.innerHTML = array[i].exercise + " " +array[i].minutes+ " minutes "  + array[i].calsBurned + " calories";
-    v.appendChild(list);
+    let v = document.getElementById("displayList");
+    for (i = 0; i < array.length; i++) {
+        let list = document.createElement("li");
+        list.innerHTML = array[i].exercise + " " +array[i].minutes+ " minutes "  
+            + array[i].calsBurned + " calories";
+        v.appendChild(list);
     }
-    
 }
 
