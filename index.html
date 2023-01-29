@@ -1,66 +1,51 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Calorie Burner</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calories Program!</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
+  <body>
+    <h1>Calorie Burner</h1>
 
-<body>
-<h1>Calculate Calories</h1>
+    <div id="RadioButtons">
+      <input type="radio" id="situps" name="exercise" value="situps" />
+      <label for="situps">Sit Ups</label>
 
-<div id="RadioButtons">
+      <input type="radio" id="pushups" name="exercise" value="pushups" />
+      <label for="pushups">Push Ups</label>
 
-<ul>
-    <input type="radio" id= "situps" name = "exercise"
-    value="situps" />
-    <label for="situps">Sit Ups</label>
-</ul>
-    
-<ul>
-    <input type="radio" id= "pushups" name = "exercise"
-    value="pushups" />
-    <label for="pushups">Push Ups</label>
-</ul>
+      <input type="radio" id="jumprope" name="exercise" value="jumprope" />
+      <label for="jumprope">Jump Rope</label>
+    </div>
 
-<ul>
-    <input type="radio" id= "jumprope" name = "exercise"
-    value="jumprope" />
-    <label for="jumprope">Jump Rope</label>
-</ul>
+    <h3>How many minutes</h3>
 
-</div>
+    <div id="time">
+      <input type="text" id="minutes" />
+    </div>
 
-<h3> How many minutes</h3>
-   
-<div id="minutes">
+    <br />
 
-    <input type="text" id="minutes" />
+    <button id="Add" onclick="add()">Add</button>
 
-</div>
+    <br />
+    <br />
 
-  <br>
+    <button id="Burned" onclick="mostBurned()">Most burned</button>
 
-  <button id="Add" onclick="onClickFunction()">Add</button>
+    <div id="txt2">
+      <input type="text" id="highestCals" />
+    </div>
+    <br />
 
-<br>
-<br>
+    <button id="Show All" onclick="onClickFunction()">Show All</button>
 
-  <button id="Burned" onclick="onClickFunction()">Most burned</button>
-
-  <div id="txt2">
-
-    <input type="text" id="txt2" />
-
-  </div>
-
-<br>
-
-  <button id="Show All" onclick="onClickFunction()">Show All</button>
-
-
-<script src="main.js"></script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>
