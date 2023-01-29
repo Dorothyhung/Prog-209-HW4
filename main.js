@@ -62,3 +62,18 @@ function mostBurned() {
     }
     document.getElementById("highestCals").value = highestExercise + " " +highestCals;
 }
+
+//show all workouts
+
+function showAll()
+{
+   let v = document.getElementById("displayList");
+
+for (i = 0; i < array.length; i++) {
+    let list = document.createElement("li");
+    list.innerHTML = array[i].exercise + " " +array[i].minutes+ " minutes "  + array[i].calsBurned + " calories";
+    v.appendChild(list);
+    }
+    
+}
+
